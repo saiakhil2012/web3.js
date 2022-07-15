@@ -1,6 +1,6 @@
 {
     "name": "web3-enhanced",
-    "version": "1.7.4",
+    "version": "1.7.6",
     "description": "Ethereum JavaScript API",
     "repository": "https://github.com/ethereum/web3.js",
     "license": "LGPL-3.0",
@@ -51,7 +51,7 @@
     ],
     "dependencies": {
         "web3-bzz": "1.7.4",
-        "web3-core": "1.7.4",
+        "web3-core-enhanced": "1.7.6",
         "web3-eth": "1.7.4",
         "web3-eth-personal": "1.7.4",
         "web3-net": "1.7.4",
