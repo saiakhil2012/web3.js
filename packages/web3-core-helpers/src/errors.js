@@ -32,7 +32,7 @@ module.exports = {
         return err;
     },
     InvalidNumberOfParams: function (got, expected, method) {
-        return new Error('Invalid number of parameters for "'+ method +'". Got '+ got +' expected '+ expected +'!');
+        return new Error('VMBC Specific Error: Invalid number of parameters for "'+ method +'". Got '+ got +' expected '+ expected +'!');
     },
     InvalidConnection: function (host, event){
         return this.ConnectionError('CONNECTION ERROR: Couldn\'t connect to node '+ host +'.', event);
@@ -99,7 +99,7 @@ module.exports = {
         return error;
     },
     NoContractAddressFoundError: function(receipt) {
-       return this.TransactionError('The transaction receipt didn\'t contain a contract address.', receipt);
+       return this.TransactionError('VMBC Specific Error: The transaction receipt didn\'t contain a contract address.', receipt);
     },
     ContractCodeNotStoredError: function(receipt) {
         return this.TransactionError('The contract code couldn\'t be stored, please check your gas limit.', receipt);
